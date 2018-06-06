@@ -9,7 +9,7 @@ FROM python:3.6.5
 LABEL maintainer "barrachri"
 
 # Airflow
-ARG AIRFLOW_VERSION=1.9.0
+ARG AIRFLOW_VERSION=1.9.0-3
 ARG AIRFLOW_HOME=/usr/local/airflow
 
 RUN useradd -ms /bin/bash -d ${AIRFLOW_HOME} airflow && \
